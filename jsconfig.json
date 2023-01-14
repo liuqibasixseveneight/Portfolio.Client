@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@portfolio/pages/*": ["*"],
+      "@portfolio/templates/*": ["*"],
+      "@portfolio/ui/*": ["*"],
+      "@portfolio/state/slices/*": ["*"]
+    }
+  }
+}
