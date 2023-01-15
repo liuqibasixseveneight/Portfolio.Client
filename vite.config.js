@@ -26,6 +26,10 @@ export default defineConfig({
         find: '@portfolio/state',
         replacement: path.resolve(__dirname, './src/state/slices'),
       },
+      {
+        find: '@portfolio/utils',
+        replacement: path.resolve(__dirname, './src/utils'),
+      },
     ],
   },
   plugins: [react()],

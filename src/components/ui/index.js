@@ -1,4 +1,4 @@
-import { Button, IFrame } from './atoms';
+import { Button, Macropad } from './atoms';
 import { Navbar, Navigation } from './organisms';
 
-export { Button, IFrame, Navbar, Navigation };
+export { Button, Macropad, Navbar, Navigation };

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Introduction, Wrapper } from './Home.styles';
-import { IFrame } from '@portfolio/ui';
+import { Macropad } from '@portfolio/ui';
 
 export default function Home() {
   return (
@@ -19,12 +19,7 @@ export default function Home() {
         </div>
       </Introduction>
 
-      <IFrame
-        src='https://my.spline.design/macropad-deb82047ccd4793de1829af15d44f11b/'
-        width='100%'
-        height='100%'
-        title='Navigation macropad'
-      />
+      <Macropad />
     </Wrapper>
   );
 }

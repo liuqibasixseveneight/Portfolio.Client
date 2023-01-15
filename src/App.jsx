@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { useSelector } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 
-import { Home } from '@portfolio/pages';
+import { About, Contact, Home, Portfolio } from '@portfolio/pages';
 import { Navbar } from '@portfolio/ui';
 import { darkTheme, lightTheme } from './themes';
 import { Wrapper } from './App.styles';
@@ -24,6 +24,9 @@ export default function App() {
 
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Wrapper>
     </ThemeProvider>
