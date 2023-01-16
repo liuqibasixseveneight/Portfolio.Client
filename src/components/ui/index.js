@@ -1,4 +1,5 @@
-import { Button, IFrame } from './atoms';
+import { Button, SplineScene } from './atoms';
+import { Macropad } from './molecules';
 import { Navbar, Navigation } from './organisms';
 
-export { Button, IFrame, Navbar, Navigation };
+export { Button, Macropad, Navbar, Navigation, SplineScene };

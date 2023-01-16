@@ -2,6 +2,8 @@
 
 ## Feature
 
+- `Macropad` handles navigation to pages when a keycap is pressed, e.g. the 'Portfolio' key on the `Macropad` will navigate to the Portfolio page
+
 ## Fixes
 
 ## Work in Progress
