@@ -8,3 +8,4 @@
 
 - Adding placeholder iFrame for interactive 3D macropad navigation
 - Adding placeholder template
+- Capturing events from macropad interaction to drive page navigation

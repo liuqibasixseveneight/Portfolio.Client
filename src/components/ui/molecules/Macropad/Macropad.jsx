@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react';
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { SplineScene } from '@portfolio/ui';
 import { keyTypes } from './keyTypes';
 import { Wrapper } from './Macropad.styles';
 
@@ -10,10 +10,10 @@ export default function Macropad(props) {
 
   function onMouseDown(e) {
     const pathByKey = keyTypes
-      .filter(function (k) {
+      .filter((k) => {
         return k?.key === e?.target?.name;
       })
-      .map(function (k) {
+      .map((k) => {
         return k?.path;
       });
 
@@ -23,14 +23,12 @@ export default function Macropad(props) {
   }
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Wrapper>
-        <Spline
-          scene='https://prod.spline.design/9o41SQ02NXESCCUs/scene.splinecode'
-          onMouseDown={onMouseDown}
-          {...props}
-        />
-      </Wrapper>
-    </Suspense>
+    <Wrapper>
+      <SplineScene
+        scene='https://prod.spline.design/9o41SQ02NXESCCUs/scene.splinecode'
+        onMouseDown={onMouseDown}
+        {...props}
+      />
+    </Wrapper>
   );
 }
