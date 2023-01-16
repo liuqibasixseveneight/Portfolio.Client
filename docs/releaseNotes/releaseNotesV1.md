@@ -6,6 +6,8 @@
 
 ## Fixes
 
+- Adding a delay to the rendering of `SplineScene` so that `mouseDown` events are consistent
+
 ## Work in Progress
 
 - Adding placeholder iFrame for interactive 3D macropad navigation
