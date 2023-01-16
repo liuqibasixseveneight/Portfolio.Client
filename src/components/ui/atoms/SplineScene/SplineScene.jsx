@@ -14,17 +14,23 @@ export default function SplineScene({
   const [isLoading, setIsLoading] = useState(true);
   const theme = useTheme();
 
+  const delaySceneLoad = setTimeout(() => {
+    setIsLoading(false);
+  }, 300);
+
   return (
     <Suspense>
       <Wrapper>
         {isLoading && <ThreeDots color={loaderColor ?? theme?.core?.['50']} />}
 
-        <Spline
-          onLoad={() => setIsLoading(false)}
-          scene={scene}
-          onMouseDown={onMouseDown}
-          {...props}
-        />
+        {!isLoading && (
+          <Spline
+            onLoad={() => delaySceneLoad}
+            scene={scene}
+            onMouseDown={onMouseDown}
+            {...props}
+          />
+        )}
       </Wrapper>
     </Suspense>
   );
