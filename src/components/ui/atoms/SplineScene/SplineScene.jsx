@@ -13,6 +13,7 @@ export default function SplineScene({
 }) {
   const [isLoading, setIsLoading] = useState(true);
   const theme = useTheme();
+  const themeCore50 = theme?.core?.['50'];
 
   const delaySceneLoad = setTimeout(() => {
     setIsLoading(false);
@@ -21,7 +22,7 @@ export default function SplineScene({
   return (
     <Suspense>
       <Wrapper>
-        {isLoading && <ThreeDots color={loaderColor ?? theme?.core?.['50']} />}
+        {isLoading && <ThreeDots color={loaderColor ?? themeCore50} />}
 
         {!isLoading && (
           <Spline
