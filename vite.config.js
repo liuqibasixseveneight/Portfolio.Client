@@ -30,6 +30,10 @@ export default defineConfig({
         find: '@portfolio/utils',
         replacement: path.resolve(__dirname, './src/utils'),
       },
+      {
+        find: '@portfolio/assets',
+        replacement: path.resolve(__dirname, './src/assets'),
+      },
     ],
   },
   plugins: [react()],
